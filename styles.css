@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(148, 177, 102); /* Background Color */
-    color: rgb(0, 0, 0); /* Text Color */
+    background-color: rgb(148, 177, 102);
+    color: rgb(0, 0, 0);
 }
 
 header, nav, main, footer {
@@ -12,46 +12,119 @@ header, nav, main, footer {
 }
 
 .container {
-    width: 800px; /* Fixed width for laptop screens */
-    margin: 0 auto; /* Center the container */
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(to right, #004056, #2296ab);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.title {
+    flex-grow: 1;
+    padding: 0 20px;
 }
 
 .logo {
-    width: 100px; /* Adjust as needed */
+    width: 100px;
     height: auto;
 }
 
 .profile-pic {
-    width: 100px; /* Adjust as needed */
+    width: 100px;
     height: auto;
     border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
 }
 
 h1, h2 {
     margin: 10px 0;
 }
 
-.boxes {
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.content {
     display: flex;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
-.box {
+.left-frame {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.right-frame {
+    flex: 1;
     background-color: white;
     padding: 20px;
-    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.right-frame ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-frame ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-frame ul li a {
+    color: #004056;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.right-frame ul li a:hover {
+    color: #2296ab;
+}
+
+.popout {
+    font-size: 1.2em;
+    margin-left: 10px;
 }
 
 footer {
-    background-color: rgb(179, 182, 185); /* Secondary Color */
-    color: rgb(0, 48, 86); /* Primary Color */
+    background-color: rgb(179, 182, 185);
+    color: rgb(0, 48, 86);
     padding: 10px;
 }
