@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.right-frame a');
+    const links = document.querySelectorAll('.right-frame a[data-src]');
     const iframe = document.getElementById('slides-frame');
 
     links.forEach(link => {
