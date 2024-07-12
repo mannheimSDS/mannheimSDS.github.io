@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(148, 177, 102); /* Background Color */
+    color: rgb(0, 0, 0); /* Text Color */
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 800px; /* Fixed width for laptop screens */
+    margin: 0 auto; /* Center the container */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.profile-pic {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgb(179, 182, 185); /* Secondary Color */
+    color: rgb(0, 48, 86); /* Primary Color */
+    padding: 10px;
+}
