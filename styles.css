@@ -10,6 +10,7 @@ body {
     background: url('socialdatasciencecollage.png') no-repeat center center;
     background-size: cover;
     position: relative;
+    height: 500px; /* Adjust height to show more of the image */
 }
 
 .header-background::before {
@@ -50,12 +51,16 @@ body {
     border-radius: 50%;
 }
 
+nav {
+    margin-top: -20px; /* Move navigation up to overlap the header a bit */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 20px 0; /* Add margin to move the nav links down */
 }
 
 nav ul li {
@@ -88,7 +93,7 @@ h2 {
 .boxes {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px; /* Move the main content down */
 }
 
 .box {
