@@ -6,17 +6,24 @@ body {
     color: rgb(0, 0, 0);
 }
 
-header, nav, main, footer {
-    padding: 20px;
-    text-align: center;
+.header-background {
+    background: url('socialdatasciencecollage.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
+.header-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Black overlay with opacity */
 }
 
 .header-content {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +31,7 @@ header, nav, main, footer {
     padding: 20px;
     border-radius: 10px;
     color: white;
+    z-index: 1;
 }
 
 .title {
@@ -77,50 +85,24 @@ h2 {
     font-weight: 400;
 }
 
-.content {
+.boxes {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.left-frame {
-    flex: 2;
-    margin-right: 20px;
-}
-
-.right-frame {
-    flex: 1;
+.box {
     background-color: white;
     padding: 20px;
+    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.right-frame ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.right-frame ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.right-frame ul li a {
-    color: #004056;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.right-frame ul li a:hover {
-    color: #2296ab;
-}
-
-.popout {
-    font-size: 1.2em;
-    margin-left: 10px;
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
