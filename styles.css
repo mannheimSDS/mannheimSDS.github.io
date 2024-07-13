@@ -71,8 +71,7 @@ nav ul li a:hover {
 .main-content {
     flex-grow: 1;
     display: flex;
-    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
-    background-size: cover;
+    background-color: rgb(148, 177, 102); /* Default background color */
 }
 
 .content {
