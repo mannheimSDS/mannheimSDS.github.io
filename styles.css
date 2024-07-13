@@ -2,20 +2,27 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
-    background-size: cover;
+    background-color: rgb(148, 177, 102);
     color: rgb(0, 0, 0);
+}
+
+.container {
+    min-height: calc(100vh - 40px); /* Ensures footer stays at the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: white;
+    z-index: 1;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
     padding: 20px;
-    border-radius: 10px;
-    color: white;
-    z-index: 1;
 }
 
 .title {
@@ -34,49 +41,22 @@ body {
     border-radius: 50%;
 }
 
-nav {
-    margin-top: 0.5in; /* Move navigation down by half an inch */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.main-content {
+    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
+    background-size: cover;
+    flex-grow: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 20px 0; /* Add margin to move the nav links down */
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffa500;
-}
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-h1 {
-    font-weight: 700;
-}
-
-h2 {
-    font-weight: 400;
 }
 
 .boxes {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px; /* Move the main content down */
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .box {
@@ -97,4 +77,5 @@ footer {
     background-color: rgb(179, 182, 185);
     color: rgb(0, 48, 86);
     padding: 10px;
+    text-align: center;
 }
