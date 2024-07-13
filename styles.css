@@ -2,33 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(148, 177, 102);
+    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
+    background-size: cover;
     color: rgb(0, 0, 0);
 }
 
-.header-background {
-    background: url('socialdatasciencecollage.png') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    height: 500px; /* Adjust height to show more of the image */
-}
-
-.header-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Black overlay with opacity */
-}
-
 .header-content {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #004056, #2296ab);
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -52,7 +35,7 @@ body {
 }
 
 nav {
-    margin-top: -20px; /* Move navigation up to overlap the header a bit */
+    margin-top: 0.5in; /* Move navigation down by half an inch */
 }
 
 nav ul {
