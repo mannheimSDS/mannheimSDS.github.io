@@ -41,36 +41,85 @@ body {
     border-radius: 50%;
 }
 
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
 .main-content {
-    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
-    background-size: cover;
     flex-grow: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
-.boxes {
+.content {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
 }
 
-.box {
+.left-frame {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.right-frame {
+    flex: 1;
     background-color: white;
     padding: 20px;
-    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+.right-frame ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-frame ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-frame ul li a {
+    color: #004056;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.right-frame ul li a:hover {
+    color: #2296ab;
+}
+
+.popout {
+    font-size: 1.2em;
+    margin-left: 10px;
 }
 
 footer {
