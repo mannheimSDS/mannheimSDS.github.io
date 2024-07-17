@@ -90,7 +90,7 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 600px;
+    width: 50%;
     margin: 40px auto;
     text-align: center;
 }
@@ -106,12 +106,17 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 input[type="submit"] {
