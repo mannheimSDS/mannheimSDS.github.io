@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit to Google Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+    <div class="form-container"> <!-- Assuming there is a .form-container class in your CSS -->
+        <h1>Submit Information</h1>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfE2YBLbCpRSTGGwuz5ZJI2LxVErzpygGP0T0kXvGfAr3oYrg/formResponse" method="POST" target="_self">
+            <div class="form-group"> <!-- Assuming there is a .form-group class for styling form inputs -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="entry.1661530550" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="entry.2039849384" required>
+            </div>
+            <div class="form-group">
+                <label for="affiliation">University Affiliation:</label>
+                <input type="text" id="affiliation" name="entry.1982394823" required>
+            </div>
+            <!-- Add more fields as needed, ensuring each uses the .form-group for consistent styling -->
+            <div class="form-group">
+                <label for="consent">I consent to the use of my submitted data:</label>
+                <input type="checkbox" id="consent" name="entry.489329432" value="I consent" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="submit-button"> <!-- Assuming .submit-button for styling -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
