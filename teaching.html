@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teaching - Chair of Social Data Science, University of Mannheim</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -29,88 +29,75 @@
                 </ul>
             </nav>
         </header>
+
         <main class="main-content">
-            <div class="content">
-                <div class="left-frame">
-                    <iframe id="slides-frame" src="https://docs.google.com/presentation/d/e/2PACX-1vQxt6j-lFLSzdwF_VmZgmNRqgKGfKrd3HyGB_t8HoOPc9OEb82km7nLEJrFyNKp7q5TY-lJX1RVPSrP/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                </div>
-                <div class="right-frame">
-                    <h3>Bayes Lectures</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/156clG0TflqwtIMnXAB1epT8XQG8GJMPMZeOq-nl2SyQ/embed?start=false&loop=false&delayms=3000">0. Overview</a>
-                            <a href="https://docs.google.com/presentation/d/156clG0TflqwtIMnXAB1epT8XQG8GJMPMZeOq-nl2SyQ/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1XDrA1fLcWHnnDrLo-JZHvobCrY5pTmEmzpVXzzdHbOA/embed?start=false&loop=false&delayms=3000">1. Basic Probability</a>
-                            <a href="https://docs.google.com/presentation/d/1XDrA1fLcWHnnDrLo-JZHvobCrY5pTmEmzpVXzzdHbOA/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1N_k2toGi_SRmjfbvD02sMpeUhkXgBBLBoTWbBg7BaWI/embed?start=false&loop=false&delayms=3000">2. Discrete Distributions</a>
-                            <a href="https://docs.google.com/presentation/d/1N_k2toGi_SRmjfbvD02sMpeUhkXgBBLBoTWbBg7BaWI/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
+            <!-- Accordion structure for sections -->
+            <button class="accordion">Bayes Lectures</button>
+            <div class="panel">
+                <p>0. Overview
+                    <iframe src="https://docs.google.com/presentation/d/156clG0TflqwtIMnXAB1epT8XQG8GJMPMZeOq-nl2SyQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/156clG0TflqwtIMnXAB1epT8XQG8GJMPMZeOq-nl2SyQ/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+                <p>1. Basic Probability
+                    <iframe src="https://docs.google.com/presentation/d/1XDrA1fLcWHnnDrLo-JZHvobCrY5pTmEmzpVXzzdHbOA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1XDrA1fLcWHnnDrLo-JZHvobCrY5pTmEmzpVXzzdHbOA/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+                <p>2. Discrete Distributions
+                    <iframe src="https://docs.google.com/presentation/d/1N_k2toGi_SRmjfbvD02sMpeUhkXgBBLBoTWbBg7BaWI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1N_k2toGi_SRmjfbvD02sMpeUhkXgBBLBoTWbBg7BaWI/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+            </div>
 
-                    <h3>Bayes Practice</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1eXpaLlV0Q6NXY95350mBJVO6WXjGnyo9g94Or16PVaU/embed?start=false&loop=false&delayms=3000">0. Setting up the Software</a>
-                            <a href="https://docs.google.com/presentation/d/1eXpaLlV0Q6NXY95350mBJVO6WXjGnyo9g94Or16PVaU/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1tWicVrWzqE_IsGewI_MSIC9_C2aGgdnu0eq6N6kbjFs/embed?start=false&loop=false&delayms=3000">1. Simulated and Real Data</a>
-                            <a href="https://docs.google.com/presentation/d/1tWicVrWzqE_IsGewI_MSIC9_C2aGgdnu0eq6N6kbjFs/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1XO8rm4ejRZb3PUzdsjaqA8n1KRb3jwGx9fO7nzQCjh8/embed?start=false&loop=false&delayms=3000">2. Beta Regression and Uncertainty Intervals</a>
-                            <a href="https://docs.google.com/presentation/d/1XO8rm4ejRZb3PUzdsjaqA8n1KRb3jwGx9fO7nzQCjh8/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
+            <button class="accordion">Bayes Practice</button>
+            <div class="panel">
+                <p>0. Setting up the Software
+                    <iframe src="https://docs.google.com/presentation/d/1eXpaLlV0Q6NXY95350mBJVO6WXjGnyo9g94Or16PVaU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1eXpaLlV0Q6NXY95350mBJVO6WXjGnyo9g94Or16PVaU/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+                <p>1. Simulated and Real Data
+                    <iframe src="https://docs.google.com/presentation/d/1tWicVrWzqE_IsGewI_MSIC9_C2aGgdnu0eq6N6kbjFs/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1tWicVrWzqE_IsGewI_MSIC9_C2aGgdnu0eq6N6kbjFs/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+            </div>
 
-                    <h3>Causal Inference</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000">1. Potential Outcomes and Causal Inference</a>
-                            <a href="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/embed?start=false&loop=false&delayms=3000">2. Fisherian Inference</a>
-                            <a href="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1kvqNyib_k_r0yKqmztFvceZa5tItlNjcac91m_Oq25k/embed?start=false&loop=false&delayms=3000">3. Experiments</a>
-                            <a href="https://docs.google.com/presentation/d/1kvqNyib_k_r0yKqmztFvceZa5tItlNjcac91m_Oq25k/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
+            <button class="accordion">Causal Inference</button>
+            <div class="panel">
+                <p>1. Potential Outcomes and Causal Inference
+                    <iframe src="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+                <p>2. Fisherian Inference
+                    <iframe src="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+            </div>
 
-                    <h3>Causal Inference Practice</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1RKEF_eRNZyuwkfy6Xz1qXK-EBmKt2niuyo_eiYvz7x4/embed?start=false&loop=false&delayms=3000">1. Hypothesis Testing</a>
-                            <a href="https://docs.google.com/presentation/d/1RKEF_eRNZyuwkfy6Xz1qXK-EBmKt2niuyo_eiYvz7x4/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
+            <button class="accordion">Causal Inference and Machine Learning</button>
+            <div class="panel">
+                <p>1. Regression and Predictive Inference
+                    <iframe src="https://docs.google.com/presentation/d/1aD8g0MsOYCmv6sxbiWptSbtVSwI1sx5WDtnoGcKfJ7A/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1aD8g0MsOYCmv6sxbiWptSbtVSwI1sx5WDtnoGcKfJ7A/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+            </div>
 
-                    <h3>Causal Inference and Machine Learning</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1aD8g0MsOYCmv6sxbiWptSbtVSwI1sx5WDtnoGcKfJ7A/embed?start=false&loop=false&delayms=3000">1. Regression and Predictive Inference</a>
-                            <a href="https://docs.google.com/presentation/d/1aD8g0MsOYCmv6sxbiWptSbtVSwI1sx5WDtnoGcKfJ7A/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
+            <button class="accordion">Causal Inference Practice</button>
+            <div class="panel">
+                <p>1. Hypothesis Testing
+                    <iframe src="https://docs.google.com/presentation/d/1RKEF_eRNZyuwkfy6Xz1qXK-EBmKt2niuyo_eiYvz7x4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1RKEF_eRNZyuwkfy6Xz1qXK-EBmKt2niuyo_eiYvz7x4/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+            </div>
 
-                    <h3>Talks</h3>
-                    <ul>
-                        <li>
-                            <a href="#" data-src="https://drive.google.com/file/d/1It3NTmHylKzr9uzwVa7YhREGl5bJZenO/preview">Introduction to Causal Inference in Political Science</a>
-                            <a href="https://drive.google.com/file/d/1It3NTmHylKzr9uzwVa7YhREGl5bJZenO/view?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                        <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1GzoA7bQGfxTQHoGA74Y8d_Oi-eS-euwegYRHX3ce5tg/embed?start=false&loop=false&delayms=3000">GESIS, Inference with Texts</a>
-                            <a href="https://docs.google.com/presentation/d/1GzoA7bQGfxTQHoGA74Y8d_Oi-eS-euwegYRHX3ce5tg/edit?usp=sharing" target="_blank" class="popout">↗</a>
-                        </li>
-                    </ul>
-                </div>
+            <button class="accordion">Talks</button>
+            <div class="panel">
+                <p>Introduction to Causal Inference in Political Science
+                    <iframe src="https://drive.google.com/file/d/1It3NTmHylKzr9uzwVa7YhREGl5bJZenO/preview" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://drive.google.com/file/d/1It3NTmHylKzr9uzwVa7YhREGl5bJZenO/view?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
+                <p>GESIS, Inference with Texts
+                    <iframe src="https://docs.google.com/presentation/d/1GzoA7bQGfxTQHoGA74Y8d_Oi-eS-euwegYRHX3ce5tg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+                    <a href="https://docs.google.com/presentation/d/1GzoA7bQGfxTQHoGA74Y8d_Oi-eS-euwegYRHX3ce5tg/edit?usp=sharing" target="_blank" class="popout-link">↗</a>
+                </p>
             </div>
         </main>
     </div>
