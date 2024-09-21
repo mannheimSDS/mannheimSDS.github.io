@@ -1,3 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(148, 177, 102);
+    background-image: url('socialdatasciencecollage.png'); /* Add the collage background */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-attachment: fixed; /* Fix the background while scrolling */
+    background-position: center; /* Center the background image */
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    min-height: calc(100vh - 40px); /* Ensures footer stays at the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: white;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Rest of your CSS */
+
+
 /* Existing Styles - no changes needed */
 
 body {
