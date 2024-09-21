@@ -3,42 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(148, 177, 102);
-    background-image: url('socialdatasciencecollage.png'); /* Add the collage background */
+    background-image: url('socialdatasciencecollage.png'); /* Adding the collage background */
     background-size: cover; /* Ensure the image covers the entire background */
     background-attachment: fixed; /* Fix the background while scrolling */
     background-position: center; /* Center the background image */
-    color: rgb(0, 0, 0);
-}
-
-.container {
-    min-height: calc(100vh - 40px); /* Ensures footer stays at the bottom */
-    display: flex;
-    flex-direction: column;
-}
-
-.banner {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-    color: white;
-    z-index: 1;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-/* Rest of your CSS */
-
-
-/* Existing Styles - no changes needed */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(148, 177, 102);
     color: rgb(0, 0, 0);
 }
 
@@ -90,8 +58,6 @@ body {
 }
 
 .main-content {
-    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
-    background-size: cover;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -190,7 +156,6 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    position: relative; /* Needed for dropdown positioning */
 }
 
 nav ul li a {
@@ -204,39 +169,6 @@ nav ul li a:hover {
     color: #ffa500;
 }
 
-/* Dropdown Menu Styles */
-nav ul li ul {
-    display: none; /* Hidden by default */
-    position: absolute;
-    background-color: #333; /* Background of dropdown */
-    list-style-type: none;
-    padding: 0;
-    top: 100%; /* Align just below the parent menu */
-    left: 0;
-    min-width: 200px; /* Set the minimum width */
-    z-index: 10; /* Ensures the dropdown is on top */
-}
-
-nav ul li ul li {
-    padding: 10px;
-}
-
-nav ul li ul li a {
-    color: white; /* Dropdown link color */
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-}
-
-nav ul li ul li a:hover {
-    background-color: #444; /* Hover background for dropdown items */
-}
-
-nav ul li:hover ul {
-    display: block; /* Show dropdown on hover */
-}
-
-/* Content and Frames */
 .content {
     display: flex;
     width: 100%;
