@@ -1,92 +1,263 @@
-/* Background and main container settings */
+/* Existing Styles - no changes needed */
+
 body {
-    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
-    background-size: cover;
     font-family: 'Roboto', sans-serif;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: rgb(148, 177, 102);
+    color: rgb(0, 0, 0);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    border-radius: 10px;
+    min-height: calc(100vh - 40px); /* Ensures footer stays at the bottom */
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header styling */
+.banner {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    color: white;
+    z-index: 1;
+}
+
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.header-content .logo {
-    width: 150px;
+.title {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.contact-link {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #ffd700;
+}
+
+.logo {
+    width: 100px;
     height: auto;
 }
 
-.header-content .title h1 {
-    color: #00274d;
-    font-size: 36px;
-}
-
-.header-content .title h2 {
-    color: #4c4c4c;
-    font-size: 24px;
-}
-
-.header-content .profile-pic {
-    width: 200px;
+.profile-pic {
+    width: 100px;
     height: auto;
     border-radius: 50%;
 }
 
-/* Navigation menu */
+.main-content {
+    background: url('socialdatasciencecollage.png') no-repeat center center fixed;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #004056;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #003345;
+}
+
+footer {
+    background-color: rgb(179, 182, 185);
+    color: rgb(0, 48, 86);
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 }
 
 nav ul li {
     margin: 0 15px;
+    position: relative; /* Needed for dropdown positioning */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #00274d;
+    color: white;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #ffa500;
 }
 
-/* Main content area */
-.main-content {
+/* Dropdown Menu Styles */
+nav ul li ul {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #333; /* Background of dropdown */
+    list-style-type: none;
+    padding: 0;
+    top: 100%; /* Align just below the parent menu */
+    left: 0;
+    min-width: 200px; /* Set the minimum width */
+    z-index: 10; /* Ensures the dropdown is on top */
+}
+
+nav ul li ul li {
+    padding: 10px;
+}
+
+nav ul li ul li a {
+    color: white; /* Dropdown link color */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li ul li a:hover {
+    background-color: #444; /* Hover background for dropdown items */
+}
+
+nav ul li:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Content and Frames */
+.content {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    width: 100%;
+    padding: 20px;
 }
 
 .left-frame {
-    flex: 1;
+    flex: 3;
+    margin-right: 20px;
 }
 
 .right-frame {
     flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #00274d;
-    color: white;
-    margin-top: 20px;
+.right-frame ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-frame ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-frame ul li a {
+    color: #004056;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.right-frame ul li a:hover {
+    color: #2296ab;
+}
+
+.popout {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.iframe-container {
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.left-frame iframe {
+    width: 100%;
+    height: 1200px; /* Allow extra height for scrolling */
+    border: none;
 }
