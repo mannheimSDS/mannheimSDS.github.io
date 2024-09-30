@@ -14,3 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// js/script.js
+function changeIframeSource(src) {
+    document.getElementById('slides-frame').src = src;
+}
