@@ -6,6 +6,7 @@
     <title>Causal Inference - Chair of Social Data Science</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -24,26 +25,30 @@
             <div class="content">
                 <div class="left-frame">
                     <!-- Default iframe (Introduction) -->
-                    <iframe src="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <iframe id="slides-frame" src="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
                 <div class="right-frame">
                     <h3>Causal Inference Lectures</h3>
                     <ul>
                         <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000">1. Introduction to Causal Inference</a>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/embed?start=false&loop=false&delayms=3000')">1. Introduction to Causal Inference</a>
                             <a href="https://docs.google.com/presentation/d/1bJXZzcUEpODXlEvldRWQNn7268pzzAAA3nKpFT2-VVI/edit?usp=sharing" target="_blank" class="popout">↗</a>
                         </li>
                         <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/embed?start=false&loop=false&delayms=3000">2. Fisherian Inference</a>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/embed?start=false&loop=false&delayms=3000')">2. Fisherian Inference</a>
                             <a href="https://docs.google.com/presentation/d/1Q_j7Jf2JoMYWXWsmIcaWQ9O5LEg-6cmV37_dt7brFVg/edit?usp=sharing" target="_blank" class="popout">↗</a>
                         </li>
                         <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1kvqNyib_k_r0yKqmztFvceZa5tItlNjcac91m_Oq25k/embed?start=false&loop=false&delayms=3000">3. Randomized Experiments</a>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/1kvqNyib_k_r0yKqmztFvceZa5tItlNjcac91m_Oq25k/embed?start=false&loop=false&delayms=3000')">3. Randomized Experiments</a>
                             <a href="https://docs.google.com/presentation/d/1kvqNyib_k_r0yKqmztFvceZa5tItlNjcac91m_Oq25k/edit?usp=sharing" target="_blank" class="popout">↗</a>
                         </li>
                         <li>
-                            <a href="#" data-src="https://docs.google.com/presentation/d/1uRtyyfWrMr-ofFFtjJ4ENanzfxaSkJYBP_RhLzFHwnY/embed?start=false&loop=false&delayms=3000">4. Difference-in-Difference</a>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/1uRtyyfWrMr-ofFFtjJ4ENanzfxaSkJYBP_RhLzFHwnY/embed?start=false&loop=false&delayms=3000')">4. Difference-in-Difference</a>
                             <a href="https://docs.google.com/presentation/d/1uRtyyfWrMr-ofFFtjJ4ENanzfxaSkJYBP_RhLzFHwnY/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vQqfEDa_9caIf5BIufZbTTmvZqpyCL5za7t9hRSCtofjekARAnNChjJRjsdNYlVdLrQ8gf7EER1a8k3/embed?start=false&loop=false&delayms=3000')">5. Experiments with Examples</a>
+                            <a href="https://docs.google.com/presentation/d/1vSVl4VV61VzQx7Yi-ssU_NjLi6yiCFj020kTNntYVQg/edit?usp=sharing" target="_blank" class="popout">↗</a>
                         </li>
                     </ul>
                 </div>
@@ -53,5 +58,10 @@
     <footer>
         <p>&copy; 2024 University of Mannheim</p>
     </footer>
+    <script>
+        function changeIframeSource(src) {
+            document.getElementById("slides-frame").src = src;
+        }
+    </script>
 </body>
 </html>
