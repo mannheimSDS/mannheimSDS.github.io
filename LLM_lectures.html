@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Lectures - Chair of Social Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <div class="header-content">
+                <img src="mannheimseal.jpeg" alt="Mannheim Seal" class="logo">
+                <div class="title">
+                    <h1>LLM Lectures</h1>
+                    <h2>Chair of Social Data Science, University of Mannheim</h2>
+                    <a href="contact.html" class="contact-link">Contact</a>
+                </div>
+                <img src="ratkovic.png" alt="Prof. Dr. Marc Ratkovic" class="profile-pic">
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="content">
+                <div class="left-frame">
+                    <!-- Default iframe (Introduction) -->
+                    <iframe id="slides-frame" src="https://docs.google.com/presentation/d/e/2PACX-1vSsiaMteWd3GKR-173qJvhwZMZ5wMlrgmWhXBDlj4knUwhXD7QUUfg76fYv_p0KMqvTSz2IgiOy7Wea/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+                <div class="right-frame">
+                    <h3>LLM Lectures</h3>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vSsiaMteWd3GKR-173qJvhwZMZ5wMlrgmWhXBDlj4knUwhXD7QUUfg76fYv_p0KMqvTSz2IgiOy7Wea/embed?start=false&loop=false&delayms=3000')">1. Tokenizing</a>
+                            <a href="https://docs.google.com/presentation/d/1hRLs6BjUi3Ejb3IEb3yxfFDf2IL7x1-_sM-p04oENuk/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vSVFQu-UjviS483R-qFCUJlPuoA-2M7feTw6os902fNiyM47zy4e5a6RLyQH2yUbpjp4k-8VNLfETXo/embed?start=false&loop=false&delayms=3000')">2. Simple Language Models</a>
+                            <a href="https://docs.google.com/presentation/d/1sUcADLIHtdhJEjNLrqQGCR5-iHvGa55Rv8ThJax555Q/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vS-BtH7xbvX_8oF5tT2sOwfrXoWRCVzVLn2ybg0Qm1XRzFQQgJpXyEkwshhpZv3WoURMg-xHhUyZCCH/embed?start=false&loop=false&delayms=3000')">3. Neural Nets and Early Architectures</a>
+                            <a href="https://docs.google.com/presentation/d/1KDRgeLJkMH6JIFGCISgfLzlm5tbB0papn9XUr02Cjhw/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vSJJZ97yyyk1YiUOqflq-AMs_p5kf-Y09MFNWjBclLTAHR60pbr8_kp8bGqelY7xGOxFk-W4GO9eYiB/embed?start=false&loop=false&delayms=3000')">4. Transformer Architectures</a>
+                            <a href="https://docs.google.com/presentation/d/1foe6xGrnXVBnWa2XMtDsNBXG_aaG9KDx4euDB95O2v0/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vR2fHusc8sjf5-jC4QLpmC_jc7OyBf60XIdCSBxQdj0Jf_2CR1xchqT3QBDKj4aCxwRIqVacnN-w6QD/embed?start=false&loop=false&delayms=3000')">5. Current Trends (2024)</a>
+                            <a href="https://docs.google.com/presentation/d/1XgZXNwMWAlV9RTvdjf_xzAYYWgrliHJVEqt_ahYagSc/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 University of Mannheim</p>
+    </footer>
+    <script>
+        function changeIframeSource(src) {
+            document.getElementById("slides-frame").src = src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Practice - Chair of Social Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <div class="header-content">
+                <img src="mannheimseal.jpeg" alt="Mannheim Seal" class="logo">
+                <div class="title">
+                    <h1>LLM Practice</h1>
+                    <h2>Chair of Social Data Science, University of Mannheim</h2>
+                    <a href="contact.html" class="contact-link">Contact</a>
+                </div>
+                <img src="ratkovic.png" alt="Prof. Dr. Marc Ratkovic" class="profile-pic">
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="content">
+                <div class="left-frame">
+                    <!-- Default iframe (Installation) -->
+                    <iframe id="slides-frame" src="https://docs.google.com/presentation/d/e/2PACX-1vS4damWmPZA87IOO4AHEkrnXMkX_l2evK5M6J4Fxx3xF8kSEYp6uLcx_wLwY3h9phdOQI2G3XwNckKb/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+                <div class="right-frame">
+                    <h3>LLM Practice Lectures</h3>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vS4damWmPZA87IOO4AHEkrnXMkX_l2evK5M6J4Fxx3xF8kSEYp6uLcx_wLwY3h9phdOQI2G3XwNckKb/embed?start=false&loop=false&delayms=3000')">1. Installation</a>
+                            <a href="https://docs.google.com/presentation/d/1HGXFVbtQr55-AMY74Qa60wxH3AetZTdn6jAbuNXSvVA/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vSKozLYu22b21sEcQp0Rm15bHfaPRk9myx1M7a_Zk6GX1jInsW_QySLHywkRKETScfmgRIj1pusIJd6/embed?start=false&loop=false&delayms=3000')">2. Chatbots and a Few Agents</a>
+                            <a href="https://docs.google.com/presentation/d/1laD_UswQ46bmOqiO70XkXAyXiah8xSVQCHOsjs_Bi8M/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vRuThwAc2S08vRtgEcuRrM3sWXkmPJk0efC_nZgt-59HFbm8FGS3VirIWwIJas6vlS_9eeV0EVHqBGT/embed?start=false&loop=false&delayms=3000')">3. Prompt Engineering</a>
+                            <a href="https://docs.google.com/presentation/d/18aDkgt6XzRiqY3PVJ2AW6uES-OdmfRMhYaKEivkMESE/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vTmDHzRxJMpVz9kdk_v6Caky_lemlQMQPyiJcrwtwl3WmIh7ZENkGm97mY7AuSbKmFk5NimjxyjFe1y/embed?start=false&loop=false&delayms=3000')">4. Chatting with a PDF</a>
+                            <a href="https://docs.google.com/presentation/d/1sv-lnmWcZM3hjCApLeJhER-wK7mqrUOHi4JupRZNe8I/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vQzowpnmxZuicySTEKJB0Ymk0lmtJgzqGCrEHLSa_1KeCIljxW4AiU3PWXvVgToJgl6W3FIjWyciVif/embed?start=false&loop=false&delayms=3000')">5. RAGs</a>
+                            <a href="https://docs.google.com/presentation/d/16e_T8mD6AO82z0twzbJ1bEh4-BiJILu9flMZ3YcfutU/edit?usp=sharing" target="_blank" class="popout">↗</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 University of Mannheim</p>
+    </footer>
+    <script>
+        function changeIframeSource(src) {
+            document.getElementById("slides-frame").src = src;
+        }
+    </script>
+</body>
+</html>
