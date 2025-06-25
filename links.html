@@ -1,130 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causal Inference Methods – Conference Links</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .link-item{display:flex;flex-direction:column;padding:10px 0;border-bottom:1px solid #ddd;}
-        .link-title-row{display:flex;align-items:center;gap:6px;font-weight:bold;}
-        .link-title-row a{color:#007bff;text-decoration:none;}
-        .popout{font-size:14px;color:#333;text-decoration:none;}
-        .link-author{margin-left:20px;color:#444;}
-        .no-link{margin-left:20px;font-size:14px;color:#888;font-style:italic;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Causal Inference Methods – Session Links</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+  .link-item {padding:10px 0;border-bottom:1px solid #ddd}
+  .title     {display:flex;gap:6px;font-weight:bold}
+  .title a   {color:#007bff;text-decoration:none}
+  .popout    {font-size:14px;text-decoration:none;color:#333}
+  .author    {margin-left:20px;color:#444}
+  .nolink    {margin-left:20px;color:#888;font-style:italic}
+  .container {display:flex}
+  .left-frame{flex:3}
+  .right-frame{flex:2;padding-left:20px;overflow-y:auto;height:600px}
+</style>
 </head>
 <body>
+
 <div class="container">
-<header class="banner">
-    <div class="header-content">
-        <img src="mannheimseal.jpeg" alt="Mannheim Seal" class="logo">
-        <div class="title">
-            <h1>Causal Inference Methods</h1>
-            <h2>Conference Session Links</h2>
-            <a href="contact.html" class="contact-link">Contact</a>
-        </div>
-        <img src="ratkovic.png" alt="Prof. Dr. Marc Ratkovic" class="profile-pic">
+
+  <!-- LEFT – slide-style viewer -->
+  <div class="left-frame">
+    <iframe id="viewer"
+            src="papers/neural_ideal_point.pdf#toolbar=0&navpanes=0&page=1"
+            width="960" height="569"></iframe>
+  </div>
+
+  <!-- RIGHT – clickable list -->
+  <div class="right-frame">
+    <h3>Causal Inference Methods</h3>
+
+    <!-- Paper 1 – no PDF yet -->
+    <div class="link-item">
+      <div class="title">Bayesian Rank Likelihood to Address Measurement Error Bias from Ordered Categorical Predictors</div>
+      <div class="author">Ramses Llobet Bentarif, University of Washington</div>
+      <span class="nolink">(link forthcoming)</span>
     </div>
-</header>
 
-<main class="main-content">
-    <div class="content">
-        <!-- LEFT: iframe -->
-        <div class="left-frame">
-            <iframe id="slides-frame"
-                    src="https://drive.google.com/viewerng/viewer?embedded=1&url=https://drive.google.com/uc?export=download&id=13g4Fa7o5dqUY2h-PdIpAyCLwgxX6calj"
-                    frameborder="0" width="960" height="569"
-                    allowfullscreen></iframe>
-        </div>
-
-        <!-- RIGHT: list -->
-        <div class="right-frame">
-            <h3>Causal Inference Methods</h3>
-
-            <!-- 1 -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    Bayesian Rank Likelihood to Address Measurement Error Bias from Ordered Categorical Predictors
-                </div>
-                <div class="link-author">Ramses Llobet Bentarif, University of Washington</div>
-                <span class="no-link">(link forthcoming)</span>
-            </div>
-
-            <!-- 2 -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    <a href="#"
-                       onclick="changeIframeSource('https://drive.google.com/viewerng/viewer?embedded=1&url=https://drive.google.com/uc?export=download&id=13g4Fa7o5dqUY2h-PdIpAyCLwgxX6calj')">
-                       The Neural Ideal Point Model
-                    </a>
-                    <a href="https://drive.google.com/file/d/13g4Fa7o5dqUY2h-PdIpAyCLwgxX6calj/view?usp=sharing"
-                       target="_blank" class="popout">(link)</a>
-                </div>
-                <div class="link-author">Hugo Subtil, University of Zurich</div>
-            </div>
-
-            <!-- 3 -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    When can we ignore missing values? A Test of Conditional Independence in Missing-Data Analysis
-                </div>
-                <div class="link-author">Thomas Robinson, London School of Economics</div>
-                <span class="no-link">(link forthcoming)</span>
-            </div>
-
-            <!-- 4 -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    <a href="#"
-                       onclick="changeIframeSource('https://drive.google.com/viewerng/viewer?embedded=1&url=https://drive.google.com/uc?export=download&id=1ypIy50LF-KxMeo82IDzmZbnZP85-14uy')">
-                       Bounding causal effects in survey experiments with noncompliance or inattention
-                    </a>
-                    <a href="https://drive.google.com/file/d/1ypIy50LF-KxMeo82IDzmZbnZP85-14uy/view?usp=sharing"
-                       target="_blank" class="popout">(link)</a>
-                </div>
-                <div class="link-author">Matthew Tyler, Rice University</div>
-            </div>
-
-            <!-- 5 -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    <a href="#"
-                       onclick="changeIframeSource('https://drive.google.com/viewerng/viewer?embedded=1&url=https://drive.google.com/uc?export=download&id=11XxeRBkc76H3mU9uGTyTPvCcxKVVYBn4')">
-                       Comments
-                    </a>
-                    <a href="https://drive.google.com/file/d/11XxeRBkc76H3mU9uGTyTPvCcxKVVYBn4/view?usp=sharing"
-                       target="_blank" class="popout">(link)</a>
-                </div>
-                <div class="link-author">Max Goplerud, University of Texas at Austin</div>
-            </div>
-
-            <!-- 6 (Slides) -->
-            <div class="link-item">
-                <div class="link-title-row">
-                    <a href="#"
-                       onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vQ0ecqEcGTGgtE5OazrLQPnt35oCGSdbABt_A7SzRf4cvDRWGu2mBXqQz8-ehsnhpoOYw50DOWGP5he/pub?start=false&loop=false&delayms=3000')">
-                       Comments
-                    </a>
-                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ0ecqEcGTGgtE5OazrLQPnt35oCGSdbABt_A7SzRf4cvDRWGu2mBXqQz8-ehsnhpoOYw50DOWGP5he/pub?start=false&loop=false&delayms=3000"
-                       target="_blank" class="popout">(link)</a>
-                </div>
-                <div class="link-author">Marc Ratkovic, University of Mannheim</div>
-            </div>
-
-        </div>
+    <!-- Paper 2 -->
+    <div class="link-item">
+      <div class="title">
+        <a href="#" onclick="swap('papers/neural_ideal_point.pdf')">The Neural Ideal Point Model</a>
+        <a href="papers/neural_ideal_point.pdf" target="_blank" class="popout">(link)</a>
+      </div>
+      <div class="author">Hugo Subtil, University of Zurich</div>
     </div>
-</main>
-</div>
 
-<footer>
-    <p>&copy; 2024 University of Mannheim</p>
-</footer>
+    <!-- Paper 3 – no PDF yet -->
+    <div class="link-item">
+      <div class="title">When can we ignore missing values? A Test of Conditional Independence in Missing-Data Analysis</div>
+      <div class="author">Thomas Robinson, London School of Economics</div>
+      <span class="nolink">(link forthcoming)</span>
+    </div>
+
+    <!-- Paper 4 -->
+    <div class="link-item">
+      <div class="title">
+        <a href="#" onclick="swap('papers/bounding_causal_effects.pdf')">
+          Bounding causal effects in survey experiments with noncompliance or inattention
+        </a>
+        <a href="papers/bounding_causal_effects.pdf" target="_blank" class="popout">(link)</a>
+      </div>
+      <div class="author">Matthew Tyler, Rice University</div>
+    </div>
+
+    <!-- Comment 1 -->
+    <div class="link-item">
+      <div class="title">
+        <a href="#" onclick="swap('papers/comments_goplerud.pdf')">Comments</a>
+        <a href="papers/comments_goplerud.pdf" target="_blank" class="popout">(link)</a>
+      </div>
+      <div class="author">Max Goplerud, University of Texas at Austin</div>
+    </div>
+
+    <!-- Comment 2 – Google Slides -->
+    <div class="link-item">
+      <div class="title">
+        <a href="#" onclick="swap('https://docs.google.com/presentation/d/e/2PACX-1vQ0ecqEcGTGgtE5OazrLQPnt35oCGSdbABt_A7SzRf4cvDRWGu2mBXqQz8-ehsnhpoOYw50DOWGP5he/pub?start=false&loop=false&delayms=3000')">
+          Comments
+        </a>
+        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ0ecqEcGTGgtE5OazrLQPnt35oCGSdbABt_A7SzRf4cvDRWGu2mBXqQz8-ehsnhpoOYw50DOWGP5he/pub?start=false&loop=false&delayms=3000"
+           target="_blank" class="popout">(link)</a>
+      </div>
+      <div class="author">Marc Ratkovic, University of Mannheim</div>
+    </div>
+
+  </div><!-- /right-frame -->
+
+</div><!-- /container -->
 
 <script>
-function changeIframeSource(src){
-    document.getElementById('slides-frame').src = src;
+function swap(path){
+  const src = path.endsWith('.pdf') ? `${path}#toolbar=0&navpanes=0&page=1` : path;
+  document.getElementById('viewer').src = src;
 }
 </script>
 </body>
