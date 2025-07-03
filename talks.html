@@ -8,114 +8,88 @@
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/script.js"></script>
     <style>
-        .talk-item{
-            display:flex;
-            flex-direction:column;
-            align-items:flex-start;
-            padding:10px 0;
-            border-bottom:1px solid #ddd;
-        }
-        .talk-title{
-            display:flex;
-            align-items:center;
-            gap:5px;
-            font-weight:bold;
-        }
-        .talk-title a{
-            text-decoration:none;
-            color:#007bff;
-        }
-        .popout{
-            font-size:16px;
-            color:#333;
-            text-decoration:none;
-        }
-        .talk-description,
-        .talk-meta{
-            font-size:14px;
-            color:#555;
-            margin-left:20px;
-        }
-        .talk-meta{
-            font-size:12px;
-            color:#777;
-            font-style:italic;
-        }
+        .talk-item{display:flex;flex-direction:column;align-items:flex-start;padding:10px 0;border-bottom:1px solid #ddd;}
+        .talk-title{display:flex;align-items:center;gap:5px;font-weight:bold;}
+        .talk-title a{text-decoration:none;color:#007bff;}
+        .popout{font-size:16px;color:#333;text-decoration:none;}
+        .talk-description,.talk-meta{font-size:14px;color:#555;margin-left:20px;}
+        .talk-meta{font-size:12px;color:#777;font-style:italic;}
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="banner">
-            <div class="header-content">
-                <img src="mannheimseal.jpeg" alt="Mannheim Seal" class="logo">
-                <div class="title">
-                    <h1>Talks</h1>
-                    <h2>Chair of Social Data Science, University of Mannheim</h2>
-                    <a href="contact.html" class="contact-link">Contact</a>
-                </div>
-                <img src="ratkovic.png" alt="Prof. Dr. Marc Ratkovic" class="profile-pic">
+<div class="container">
+    <header class="banner">
+        <div class="header-content">
+            <img src="mannheimseal.jpeg" alt="Mannheim Seal" class="logo">
+            <div class="title">
+                <h1>Talks</h1>
+                <h2>Chair of Social Data Science, University of Mannheim</h2>
+                <a href="contact.html" class="contact-link">Contact</a>
             </div>
-        </header>
+            <img src="ratkovic.png" alt="Prof. Dr. Marc Ratkovic" class="profile-pic">
+        </div>
+    </header>
 
-        <main class="main-content">
-            <div class="content">
-                <div class="left-frame">
-                    <iframe id="slides-frame"
-                            src="https://docs.google.com/presentation/d/e/2PACX-1vT7BMf4tozKriPZMlJpz3AAXp7dVsOklICjPM3bD3EeIKz-0pkdbFEh2_Qb0zUGI2NnrGPDkFAuxeaD/embed?start=false&loop=false&delayms=3000"
-                            frameborder="0" width="960" height="569" allowfullscreen></iframe>
+    <main class="main-content">
+        <div class="content">
+            <div class="left-frame">
+                <iframe id="slides-frame"
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vT7BMf4tozKriPZMlJpz3AAXp7dVsOklICjPM3bD3EeIKz-0pkdbFEh2_Qb0zUGI2NnrGPDkFAuxeaD/embed?start=false&loop=false&delayms=3000"
+                        frameborder="0" width="960" height="569" allowfullscreen></iframe>
+            </div>
+
+            <div class="right-frame">
+                <h3>Talks</h3>
+
+                <!-- Talk 1 -->
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="#"
+                           onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vT7BMf4tozKriPZMlJpz3AAXp7dVsOklICjPM3bD3EeIKz-0pkdbFEh2_Qb0zUGI2NnrGPDkFAuxeaD/embed?start=false&loop=false&delayms=3000')">
+                            LLMs for Statistical Inference
+                        </a>
+                        <a href="https://docs.google.com/presentation/d/1vCzX82rEe8xbJ7G3qOV_JqaPZzprV-yo5RVcfheKGRc/edit?usp=sharing"
+                           target="_blank" class="popout">↗</a>
+                        <a href="https://mannheimsds.github.io/papers/comptext_25.pdf"
+                           target="_blank" class="popout" style="font-size:14px;">(draft&nbsp;pdf)</a>
+                    </div>
+                    <span class="talk-description">
+                        How Large Language Models (LLMs) can enhance statistical inference in econometrics.
+                    </span>
+                    <span class="talk-meta">
+                        Prepared for the Annual Meeting of the DVPW Section, Methods of Political Science, 27.3.2025;
+                        Aix Marseille Université 24.3.25; Econometrics Seminar, University of Mannheim, 13.3.2025.
+                    </span>
                 </div>
 
-                <div class="right-frame">
-                    <h3>Talks</h3>
-
-                    <!-- Talk 1 -->
-                    <div class="talk-item">
-                        <div class="talk-title">
-                            <a href="#"
-                               onclick="changeIframeSource('https://docs.google.com/presentation/d/e/2PACX-1vT7BMf4tozKriPZMlJpz3AAXp7dVsOklICjPM3bD3EeIKz-0pkdbFEh2_Qb0zUGI2NnrGPDkFAuxeaD/embed?start=false&loop=false&delayms=3000')">
-                                LLMs for Statistical Inference
-                            </a>
-                            <a href="https://docs.google.com/presentation/d/1vCzX82rEe8xbJ7G3qOV_JqaPZzprV-yo5RVcfheKGRc/edit?usp=sharing"
-                               target="_blank" class="popout">↗</a>
-                            <!-- new draft link -->
-                            <a href="https://mannheimsds.github.io/papers/comptext_25.pdf"
-                               target="_blank" class="popout" style="font-size:14px;">(draft&nbsp;pdf)</a>
-                        </div>
-
-                        <span class="talk-description">
-                            How Large Language Models (LLMs) can enhance statistical inference in econometrics.
-                        </span>
-                        <span class="talk-meta">
-                            Prepared for the Annual Meeting of the DVPW Section, Methods of Political Science, 27.3.2025;
-                            Aix Marseille Université 24.3.25; Econometrics Seminar, University of Mannheim, 13.3.2025.
-                        </span>
+                <!-- Talk 2 -->
+                <div class="talk-item">
+                    <div class="talk-title">
+                        <a href="#"
+                           onclick="changeIframeSource('https://docs.google.com/presentation/d/1PgEtW2J-7fZIxHZ6F9uR9If_MDJn5A4RtSOcyjAK5DA/embed?start=false&loop=false&delayms=3000')">
+                           Speeding Up Social Science (with Springer Nature)
+                        </a>
+                        <a href="https://docs.google.com/presentation/d/1PgEtW2J-7fZIxHZ6F9uR9If_MDJn5A4RtSOcyjAK5DA/edit?usp=sharing"
+                           target="_blank" class="popout">↗</a>
                     </div>
+                    <span class="talk-description">
+                        Preliminary Manuscript. Do not cite without permission. Details and slides for this talk will be added soon.
+                    </span>
+                </div>
 
-                    <!-- Talk 2 -->
-                    <div class="talk-item">
-                        <div class="talk-title">
-                            Speeding Up Social Science (with Springer Nature)
-                            <a href="https://docs.google.com/document/d/1zNmq4h2lUeuJL-zwSkbqHVRMiFVEJtKBzevKF7zQ1Dw/edit?usp=sharing"
-                               target="_blank" class="popout">(link)</a>
-                        </div>
-                        <span class="talk-description">
-                            Preliminary Manuscript. Do not cite without permission. Details and slides for this talk will be added soon.
-                        </span>
-                    </div>
+            </div><!-- /.right-frame -->
+        </div><!-- /.content -->
+    </main>
+</div>
 
-                </div><!-- /.right-frame -->
-            </div><!-- /.content -->
-        </main>
-    </div>
+<footer>
+    <p>&copy; 2024 University of Mannheim</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 University of Mannheim</p>
-    </footer>
-
-    <script>
-        function changeIframeSource(src){
-            document.getElementById('slides-frame').src = src;
-        }
-    </script>
+<script>
+function changeIframeSource(src){
+    document.getElementById('slides-frame').src = src;
+}
+</script>
 </body>
 </html>
